@@ -5,8 +5,8 @@ public class LP extends Record {
 		super(artist, albumTitle, year);
 	}
 
-	public String toString() {
-		return null;
+	public String toString() {		
+		return "LP Album " + super.toString();
 	}
 
 }

@@ -4,7 +4,9 @@ public class Record {
 	private int year;
 
 	public Record(String artist, String albumTitle, int year) {
-
+		this.artist = artist;
+		title = albumTitle;
+		this.year = year;		
 	}
 
 	public String getArtist() {
@@ -19,7 +21,7 @@ public class Record {
 		return year;
 	}
 	public String toString(){
-		return null;
+		return artist + " " + title + " " + year;
 	}
 
 }

@@ -62,8 +62,9 @@ public class InventoryPopulator {
 			
 				//Check if it's lp or 45 and make the 
 				//appropriate record type
-				if (type.equals("45")) 
-					rs.push(new FortyFive(artist,title,year));
+				if (type.equals("45")) {
+					rs.push(new FortyFive(artist,title,year));					
+				}
 				else rs.push(new LP(artist,title,year));
 				line.close();
 			}
@@ -71,7 +72,7 @@ public class InventoryPopulator {
 		} 
 		catch (FileNotFoundException e) {
 			e.printStackTrace();
-		}
+		}		
 		return rs;
 		
 	}
