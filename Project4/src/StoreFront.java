@@ -58,9 +58,7 @@ public class StoreFront {
 			} else {
 				lucysStore.inventoryLPs.push(r);
 			}
-
 		}
-
 		// TODO: Code that displays the menu and gets Lucy's response until she
 		// wants to quit
 
