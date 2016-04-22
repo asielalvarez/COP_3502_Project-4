@@ -27,7 +27,7 @@ public class RecordStack {
 	}
 
 	public boolean isEmpty() {
-		if (data.length == 0) {
+		if (top == 0) {
 			return true;
 		}
 		return false;
