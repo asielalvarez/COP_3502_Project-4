@@ -1,5 +1,6 @@
 import java.util.Queue;
 import java.util.Scanner;
+import java.util.InputMismatchException;
 import java.util.LinkedList;
 
 /**
@@ -43,42 +44,74 @@ public class StoreFront {
 		// You call the methods for this class from the instantiated StoreFront
 		// object
 		// whether you call it lucysStore or something else is up to you.
-		//lucysStore.repairQueue = InventoryPopulator.getInitialRepairQueue(args[0]);
+		// lucysStore.repairQueue =
+		// InventoryPopulator.getInitialRepairQueue(args[0]);
 
 		// TODO: Code to initialize both inventory stacks.
 		RecordStack bothStacks = InventoryPopulator.getInitialInventory(args[1]);
-		Record r;	
+		Record r;
 		int size = bothStacks.size();
 		for (int i = 0; i < size; i++) {
-			r = bothStacks.pop();			
+			r = bothStacks.pop();
 			if (r instanceof FortyFive) {
 				lucysStore.inventory45s.push(r);
-			} 
-			else {
+			} else {
 				lucysStore.inventoryLPs.push(r);
 			}
-			
-		}		
-		
-		System.out.println(lucysStore.inventory45s.size());
-		System.out.println(lucysStore.inventoryLPs.size());
-		
-		size = lucysStore.inventory45s.size();
-		for(int i = 0; i < size; i++){
-			System.out.println("45s");
-			r = lucysStore.inventory45s.pop();
-			System.out.println(r.toString());
+
 		}
-		size = lucysStore.inventoryLPs.size();
-		for(int i = 0; i < size; i++){
-			System.out.println("LPs");
-			r = lucysStore.inventoryLPs.pop();
-			System.out.println(r.toString());
-		}
-		
-	
+
 		// TODO: Code that displays the menu and gets Lucy's response until she
 		// wants to quit
+
+		System.out.println("Hi Lucy! Hope your day is going well, what do you need?");
+		Scanner input = new Scanner(System.in);
+		int option = 0;
+		do {
+			System.out.println("---------------------------------------------------");
+			System.out.println("1. Add a new album to be REPAIRED");
+			System.out.println("2. Repair an album");
+			System.out.println("3. View Repair Queue");
+			System.out.println("4. Add a new album to be SOLD");
+			System.out.println("5. Sell an LP album");
+			System.out.println("6. Sell an EP album");
+			System.out.println("7. View Sales Inventories");
+			System.out.println("8. Abandon All Hope");
+			System.out.println("---------------------------------------------------");
+
+			try{
+				option = input.nextInt();				
+			}
+			catch(InputMismatchException e){
+				input.nextLine();
+			}
+
+			if (option == 1) {
+
+			} 
+			else if (option == 2) {
+
+			} 
+			else if (option == 3) {
+
+			} 
+			else if (option == 4) {
+
+			} 
+			else if (option == 5) {
+
+			} 
+			else if (option == 6) {
+
+			} 
+			else if (option == 7) {
+
+			}
+			else if (option == 8){
+							
+			}		
+
+		} while (option != 8);
 
 	}
 
