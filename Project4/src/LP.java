@@ -6,7 +6,7 @@ public class LP extends Record {
 	}
 
 	public String toString() {		
-		return "LP Album " + super.toString();
+		return "LP: " + super.toString();
 	}
 
 }

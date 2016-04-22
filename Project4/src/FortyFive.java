@@ -6,7 +6,7 @@ public class FortyFive extends Record {
 	}
 
 	public String toString() {
-		return "45s Album " + super.toString();
+		return "45: " + super.toString();
 	}
 
 }

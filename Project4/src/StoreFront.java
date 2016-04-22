@@ -61,7 +61,7 @@ public class StoreFront {
 		}
 		// TODO: Code that displays the menu and gets Lucy's response until she
 		// wants to quit
-
+	
 		System.out.println("Hi Lucy! Hope your day is going well, what do you need?");
 		Scanner input = new Scanner(System.in);
 		int option = 0;
@@ -81,11 +81,11 @@ public class StoreFront {
 				option = input.nextInt();				
 			}
 			catch(InputMismatchException e){
-				input.nextLine();
+				input.next();
 			}
 
 			if (option == 1) {
-
+				
 			} 
 			else if (option == 2) {
 

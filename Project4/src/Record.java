@@ -21,7 +21,7 @@ public class Record {
 		return year;
 	}
 	public String toString(){
-		return artist + " " + title + " " + year;
+		return title + " by " + artist + ", " + year;
 	}
 
 }
